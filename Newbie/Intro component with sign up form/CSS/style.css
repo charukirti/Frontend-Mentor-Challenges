@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+:root {
+  /* primary */
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+
+  /* accent */
+  --blue: hsl(248, 32%, 49%);
+
+  /* Neutral */
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+  padding: 0 8rem;
+  background-image: url(/images/bg-intro-desktop.png);
+  background-color: var(--red);
+}
+
+section {
+  max-width: 100%;
+  width: 50%;
+}
+
+.left_side {
+  padding-right: 1.8rem;
+  color: #fff;
+
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 1.2rem;
+  }
+
+  p {
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 500;
+    opacity: 0.8;
+  }
+}
+
+.right_side {
+  .tryit_btn {
+    width: 100%;
+    padding: 15px 20px;
+    color: #fff;
+    background-color: var(--blue);
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-shadow: 0 7px hsla(249, 10%, 26%, 0.404);
+    span {
+      font-weight: 700;
+    }
+  }
+
+  .form_container {
+    width: 100%;
+    padding: 25px;
+    /* border: 2px solid blue; */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px hsla(249, 10%, 26%, 0.404);
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-bottom: 1rem;
+      
+      input,
+      button {
+        width: 100%;
+        max-width: 100%;
+        padding: 15px 20px;
+        border-radius: 5px;
+        font-size: 1rem;
+        border: 1px solid #efefef;
+        outline: none;
+        
+      }
+
+
+      .error-text {
+        text-align: right;
+        color: var(--red);
+        display: none;
+      }
+      
+
+      .field_elem.error input {
+        border: 2px solid hsl(0, 100%, 74%);
+        background-image: url(/images/icon-error.svg);
+        background-repeat: no-repeat;
+        background-position: 95% 50%;
+      }
+
+      .field_elem.error .error-text{
+        display: block;
+      }
+
+      .trial_btn {
+        background-color: var(--green);
+        border: none;
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+        box-shadow: 0px 3px hsl(154, 56%, 44%);
+      }
+
+      .trial_btn:hover {
+        background-color: hsl(154, 75%, 73%);
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      text-align: center;
+      color: var(--grayish-blue);
+      span {
+        color: var(--red);
+        font-size: 0.9rem;
+        font-weight: 500;
+      }
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

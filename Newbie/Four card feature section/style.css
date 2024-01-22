@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+:root {
+  /* Primary colors */
+
+  --cyan: hsl(180, 62%, 55%);
+  --red: hsl(0, 78%, 62%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+
+  /* Neutral colors */
+  --very_dark_blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2 {
+  font-size: 1.6rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: var(--very-light-gray);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 4rem 0;
+}
+
+section {
+  text-align: center;
+  padding: 0 0.4rem;
+}
+
+.main_heading {
+  font-weight: 200;
+  color: var(--very_dark_blue);
+}
+
+.powered_by {
+  font-weight: 600;
+  color: var(--very_dark_blue);
+  margin-bottom: 1rem;
+}
+
+.description {
+  color: var(--grayish-blue);
+  max-width: 30rem;
+  margin-bottom: 3rem;
+}
+
+article {
+  max-width: 22rem;
+  /* height: 100%; */
+  margin: 1rem 0;
+  padding: 1.5rem 1.8rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 6px 43px 60px -10px rgba(168,191,219,0.45);
+}
+
+.card_title {
+  font-weight: 600;
+  margin-bottom: .5rem;
+}
+
+.card_description {
+  font-weight: 400;
+  color: var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+.card_logo {
+  float: right;
+}
+
+.cyan {
+  border-top: 4px solid var(--cyan);
+}
+
+.red {
+  border-top: 4px solid var(--red);
+}
+
+.orange {
+  border-top: 4px solid var(--orange);
+}
+
+.blue {
+  border-top: 4px solid var(--blue);
+}
+
+/* MEDIA QUERIES */
+
+
+
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+
+
+
+@media (min-width: 768px  ) {
+  .container{
+    flex-direction: column;
+  }
+
+  .cyan {
+    position: absolute;
+    left: 5rem;
+    top: 25rem;
+  }
+
+  .blue {
+    position: absolute;
+    right: 5rem;
+    top: 25rem;
+  }
+  
+}

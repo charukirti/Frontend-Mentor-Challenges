@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="CSS/style.css">
+
+  <link rel="stylesheet" href="CSS/responsive.css">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+</head>
+
+<body>
+
+  <main>
+    <section class="left_side">
+      <h1>Learn to code by watching others</h1>
+      <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great, but
+        understanding how developers think is invaluable. </p>
+    </section>
+
+    <section class="right_side">
+      <button class="tryit_btn"><span>Try it free 7 days</span> then $20/mo. thereafter</button>
+      <div class="form_container">
+
+        <form action="">
+          <div class="field_elem">
+            <input type="text" placeholder="First Name" id="first_name">
+            <p class="error-text">First Name cannot be empty</p>
+          </div>
+
+          <div class="field_elem">
+            <input type="text" placeholder="Last Name" id="last_name">
+            <p class="error-text">Last Name cannot be empty</p>
+          </div>
+
+          <div class="field_elem">
+            <input type="email" placeholder="Email Address" id="email">
+            <p class="error-text">Look's like this is not email</p>
+          </div>
+
+          <div class="field_elem">
+            <input type="password" placeholder="Password" id="password">
+            <p class="error-text">Password cannot be empty</p>
+          </div>
+          <button type="submit" class="trial_btn">Claim your free trial</button>
+        </form>
+
+        <p class="term">By clicking the button, you are agreeing to our <span>Terms and Services</span> </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Charukirti Chougule</a>.
+    </p>
+  </footer>
+
+  <script src="./JS/script.js"></script>
+</body>
+
+</html>
