@@ -1,13 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Frontend mentor challenges (Solutions)</title>
 </head>
-<body>
 
+<body>
+    <!-- header -->
+    <header>
+        <h1 class="logo-text">
+            FEM
+        </h1>
+        <!-- navigation -->
+        <nav>
+            <select name="difficulty" id="difficulty">
+                <option value="newbie">Newbie</option>
+                <option value="junior">Junior</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+                <option value="guru">Guru</option>
+            </select>
+        </nav>
+    </header>
+
+    <main>
+        <!--solution card container -->
+        <div class="solution-card-container">
+            <div class="solution-card" id="">
+                <div class="solution-card__preview">
+                    <img src="./images/Three column card component.png" alt="Three column card component">
+                </div>
+                <div class="solution-card__content">
+                    <h2 class="challenge-name">Three column card component</h2>
+                    <div class="solution-other-info">
+                        <div class="solution-stack-info">
+                            <ul class="solution-stack">
+                                <li>HTML</li>
+                                <li>CSS</li>
+                            </ul>
+                        </div>
+                        <div class="solution-badge"></div>
+                    </div>
+                    <div class="solution-cta-container">
+                        <button><a href="#">code</a></button>
+                        <button><a href="./Newbie/Three column card component/index.html">Live preview</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
     <script src="./script.js"></script>
 </body>
+
 </html>

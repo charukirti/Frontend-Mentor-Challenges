@@ -1,0 +1,84 @@
+
+
+CSS
+/* General card container styling */
+.solution-card-container {
+  display: flex; /* Arrange cards horizontally */
+  flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
+  justify-content: space-between; /* Add spacing between cards */
+  margin-bottom: 20px; /* Add spacing below card group */
+}
+
+/* Individual card styling */
+.solution-card {
+  width: 300px; /* Adjust width as needed */
+  background-color: #f5f5f5; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  padding: 20px;
+  margin: 10px;
+}
+
+/* Preview image styling */
+.solution-card__preview img {
+  width: 100%;
+  border-radius: 10px 10px 0 0; /* Round top corners of image */
+  object-fit: cover; /* Maintain aspect ratio */
+}
+
+/* Card content styling */
+.solution-card__content {
+  text-align: center;
+}
+
+.solution-card__content h2 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+.solution-stack-info {
+  margin-top: 10px;
+}
+
+.solution-stack li {
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+/* Badge styling (adjust colors as needed) */
+.solution-badge {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Call to action buttons styling */
+.solution-cta-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.solution-cta-container button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+/* Adjust link colors */
+.solution-cta-container button a {
+  color: #fff;
+  text-decoration: none;
+}
