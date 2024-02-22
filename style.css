@@ -1,84 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
-
-CSS
-/* General card container styling */
-.solution-card-container {
-  display: flex; /* Arrange cards horizontally */
-  flex-wrap: wrap; /* Allow cards to wrap to next line on smaller screens */
-  justify-content: space-between; /* Add spacing between cards */
-  margin-bottom: 20px; /* Add spacing below card group */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* Individual card styling */
-.solution-card {
-  width: 300px; /* Adjust width as needed */
-  background-color: #f5f5f5; /* Light gray background */
-  border-radius: 10px; /* Rounded corners */
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
-  padding: 20px;
-  margin: 10px;
+body {
+  font-family: 'Oswald', sans-serif;
+  background-color: #222f3e;
 }
 
-/* Preview image styling */
-.solution-card__preview img {
-  width: 100%;
-  border-radius: 10px 10px 0 0; /* Round top corners of image */
-  object-fit: cover; /* Maintain aspect ratio */
+li {
+  list-style-type: none;
 }
 
-/* Card content styling */
-.solution-card__content {
-  text-align: center;
-}
-
-.solution-card__content h2 {
-  font-family: sans-serif;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 10px;
-  color: #333;
-}
-
-.solution-stack-info {
-  margin-top: 10px;
-}
-
-.solution-stack li {
-  display: inline-block;
-  margin-right: 10px;
-  font-size: 14px;
-  color: #999;
-}
-
-/* Badge styling (adjust colors as needed) */
-.solution-badge {
-  display: inline-block;
-  background-color: #007bff;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-/* Call to action buttons styling */
-.solution-cta-container {
-  margin-top: 15px;
-  text-align: center;
-}
-
-.solution-cta-container button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  margin-right: 5px;
-}
-
-/* Adjust link colors */
-.solution-cta-container button a {
-  color: #fff;
+a {
   text-decoration: none;
+}
+
+
+
+header {
+  /* margin: 1rem; */
+  position: sticky;
+  top: 0px;
+  margin-bottom: 2rem;
+  background-color: #636e72;
+}
+
+.logo-text {
+  font-size: 3rem;
+  font-weight: 900;
+  color: #dfe6e9;
+  margin-left: 1rem;
+}
+
+/* Styling row */
+
+.solution-card-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  /* margin: 0.5rem; */
+}
+
+/* styling card component */
+
+.solution-card {
+  background-color: #f5f6fa;
+  border: 2px solid;
+  border-radius: 20px;
+  max-width: 400px;
+  padding: 0.9rem 0.8rem;
+  width: 100%;
+}
+
+.solution-card img {
+  border-radius: 5px;
+  max-height: 100%;
+  transition: 0.6s ease-in-out;
+  max-width: 100%;
+  display: block;
+}
+
+.solution-card__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.solution-card__content .solution-other-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.solution-other-info .solution-stack {
+  display: flex;
+  gap: 0.5rem;
+
+  li {
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: inherit;
+  }
+
+  li:nth-child(1) {
+    color: #6abecd;
+  }
+
+  li:nth-child(2) {
+    color: #3e54a6;
+  }
+
+  li:nth-child(3) {
+    color: #d57c94;
+  }
+}
+
+.solution-badge {
+  font-size: 1.12rem;
+  font-weight: 700;
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta-container button {
+  padding: 0.5rem 1.1rem;
+  border: none;
+  border-radius: 9px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: inherit;
+
+  a {
+    color: #fff;
+  }
+}
+
+.cta-container button:nth-child(1) {
+  background-color: #ff7675;
+}
+
+.cta-container button:nth-child(2) {
+  background-color: #55efc4;
 }

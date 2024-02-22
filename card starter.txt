@@ -1,0 +1,40 @@
+<div class="solution-card" id="newbie">
+
+            <div class="solution-card__preview">
+                <!-- TODO: challenge preview -->
+                <img src="./images/" alt="">
+
+            </div>
+            <div class="solution-card__content">
+
+                <!-- TODO: challenge name -->
+
+                <h2 class="challenge-name"></h2>
+
+                <div class="solution-other-info">
+
+                    <ul class="solution-stack">
+
+                        <!-- TODO: challenge stack -->
+
+                        <li>HTML</li>
+                        <li>CSS</li>
+
+                    </ul>
+
+                    <!-- TODO: challenge badge -->
+                    <div class="solution-badge" style="color: #00a8ff;">Newbie</div>
+
+                </div>
+
+                <div class="cta-container">
+
+                    <button><a href="#">code</a></button>
+                    <!-- TODO: challenge url -->
+                    <button><a href="./Newbie/" target="_blank">Preview</a></button>
+
+                </div>
+
+            </div>
+
+        </div>
