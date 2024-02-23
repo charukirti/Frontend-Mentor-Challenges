@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+:root {
+  /* primary colors */
+  --light-cyan: hsl(193, 38%, 86%);
+  --Neon-green: hsl(150, 100%, 66%);
+
+  /* neutral colors */
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+
+/* reseters */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+/* custom styling */
+
+/* mobile first approach */
+
+body {
+  align-items: center;
+  background-color: var(--dark-blue);
+  display: flex;
+  font-family: 'Manrope', sans-serif;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 1rem;
+}
+
+/* main */
+
+main {
+  background-color: var(--dark-grayish-blue);
+  border-radius: 1rem;
+  max-width: 400px;
+  padding: 1.4rem;
+  position: relative;
+  width: 100%;
+}
+
+.advice_container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+/* styling advice id */
+.advice-id {
+  color: var(--Neon-green);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+}
+
+/* styling advice content */
+.advice-content {
+  color: var(--light-cyan);
+  font-size: 1.5rem;
+  font-weight: 800;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+/* adding double quotetion mark */
+.advice-content::before,
+.advice-content::after {
+  content: '"';
+}
+
+/* styling divided */
+.divider {
+  margin-bottom: 1.25rem;
+}
+
+.divider-desktop {
+  display: none;
+}
+
+/* styling dice btn */
+.dice-btn {
+  background-color: var(--Neon-green);
+  border: none;
+  border-radius: 50%;
+  bottom: -31px;
+  cursor: pointer;
+  left: 50%;
+  padding: 13px 15px;
+  position: absolute;
+  transform: translateX(-50%);
+}
+
+.dice-btn:hover {
+  box-shadow: 0 2px 30px var(--Neon-green);
+}
+
+/* making it responsive for desktop screens */
+
+@media (min-width: 500px) {
+  main {
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .advice_container {
+    padding: 2rem 1rem;
+  }
+
+  .divider-mobile {
+    display: none;
+  }
+
+  .divider-desktop {
+    display: block;
+  }
+}
